@@ -22,7 +22,7 @@ bias-chrome-extension/
 
 ### 1) Clone the repository
 ```bash
-git clone https://github.com/your-username/bias-chrome-extension.git
+git clone https://github.com/jonashjda/bias-chrome-extension.git
 cd bias-chrome-extension
 ```
 
