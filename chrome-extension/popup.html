@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Political Bias Rating</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h3>Political Bias Rating Tool</h3>
+    </header>
+    <main class="content">
+      <p class="instructions">Click the button below to analyze the political bias of the current webpage.</p>
+      <button id="analyze-button" class="analyze-button" disabled>Analyze Page</button>
+      <div id="loading" class="loading" style="display: none;">
+        <div class="spinner"></div>
+        <span>Analyzing...</span>
+      </div>
+      <div id="result" class="result"></div>
+    </main>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
