@@ -6,7 +6,7 @@ Analyze the political bias of the current web page using a Chrome extension and 
 
 You are solely responsible for evaluating and verifying any output. The author and contributors make no representations or warranties of any kind, express or implied, regarding the accuracy, reliability, or suitability of the results and expressly disclaim any and all liability for any loss, harm, or damages arising from use of this software or reliance on its outputs. Use at your own risk.
 
-**Privacy and sensitive sites**: The content script is present on all pages, but it only extracts visible text when you open the extension popup (to enable analysis) or when you click Analyze. No page text is transmitted off your device until you press Analyze; at that point, the text is sent to the local backend (`http://localhost:3000/api/analyze`), which forwards it to OpenAI for processing. Do not analyze pages containing personal, confidential, or regulated information (e.g., banking, email, health/medical records, government portals, internal tools). Use at your own risk.
+**Privacy and sensitive sites**: The content script is present on all pages, but it only extracts visible text when you open the extension popup (to enable analysis) and when you click Analyze. No page text is transmitted off your device until you press Analyze; at that point, the text is sent to the local backend (`http://localhost:3000/api/analyze`), which forwards it to OpenAI for processing. Do not analyze pages containing personal, confidential, or regulated information (e.g., banking, email, health/medical records, government portals, internal tools). Use at your own risk.
 
 ### Prerequisites
 - Node.js 18+ and npm
@@ -75,4 +75,4 @@ curl -s -X POST http://localhost:3000/api/analyze \
 
 ## Credits
 
-Created by [Jonas Davidsen](https://github.com/jonashjda)
+Created by [Jonas Davidsen](https://github.com/jonashjda) with the help of [Cursor](https://cursor.com/)
