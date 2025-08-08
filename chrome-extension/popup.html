@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Political Bias Rating</title>
+  <title>Content Analyzer</title>
   <link rel="stylesheet" href="popup.css">
-</head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* Fallback in case CSS fails to load */
+    body { font-family: Arial, sans-serif; width: 320px; }
+  </style>
+  </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <h3>Political Bias Rating Tool</h3>
-    </header>
-    <main class="content">
-      <p class="instructions">Click the button below to analyze the political bias of the current webpage.</p>
-      <button id="analyze-button" class="analyze-button" disabled>Analyze Page</button>
-      <div id="loading" class="loading" style="display: none;">
-        <div class="spinner"></div>
-        <span>Analyzing...</span>
-      </div>
-      <div id="result" class="result"></div>
-    </main>
+  <div class="popup-container">
+    <div class="header-container">
+      <img src="icon.png" alt="Extension Icon" class="header-icon" />
+      <h1 class="header">Bias Analysis</h1>
+    </div>
+
+    <div id="statusMessage" class="status-message">Loading content...</div>
+    <button id="analyzeButton" class="analyze-button" disabled>Analyze Content</button>
+    <div id="contentDisplay" class="content-display">Content analysis will appear here.</div>
+    <div class="disclaimers">
+      <p class="disclaimer"><b>AI-generated estimate.</b> May be inaccurate or biased. Do not rely on it. Use at your own risk.</p>
+      <p class="disclaimer"><b>Privacy note:</b> reads visible page text when the popup opens to enable analysis. No data leaves your device until you press <b>Analyze Content</b>, which sends extracted text to your local server and OpenAI for processing. Avoid analyzing pages with sensitive or personal information.</p>
+    </div>
   </div>
   <script src="popup.js"></script>
 </body>
