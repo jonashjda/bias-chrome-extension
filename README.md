@@ -69,10 +69,6 @@ curl -s -X POST http://localhost:3000/api/analyze \
   - `chrome-extension/background.js`
   - `chrome-extension/popup.js`
 
-### Security
-- Do not commit your `.env` file. This repo includes a `.gitignore` that ignores `.env` by default.
-- Treat your API key as a secret. Never embed it in extension code.
-
 ## Credits
 
 Created by [Jonas Davidsen](https://github.com/jonashjda) with the help of [Cursor](https://cursor.com/)
