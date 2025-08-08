@@ -66,8 +66,3 @@ curl -s -X POST http://localhost:3000/api/analyze \
 ### Security
 - Do not commit your `.env` file. This repo includes a `.gitignore` that ignores `.env` by default.
 - Treat your API key as a secret. Never embed it in extension code.
-
-### License
-MIT
-
-
